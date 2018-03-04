@@ -1,0 +1,244 @@
+
+@media (max-width:900px) {
+
+  body{
+  margin:2% 2% 2% 2%;
+  }
+  #pbloque{
+  text-shadow: 2px 2px 3px  #02010a;
+  color:white;
+  width: 70%;
+  margin: 20px 15% 20px 15%;
+  text-align: center;
+
+
+
+  }
+   #contenido{
+     display: flex;
+     flex-direction: row;
+     width: 70%;
+     margin:12px 15% 12px 15%;
+
+
+
+   }
+
+  div[id^="bloque"]{
+text-align: center;
+flex-grow: 1;
+     font-size:85%;
+}
+
+
+
+  #encabezado{
+    background-color:#5b7989;
+    width: 100%;
+    height: 12%;
+    border-radius: 10px  10px 0px 0px;
+  }
+
+  #imagenessecundarias{
+  background-color:  #d5c75f;
+  width: 100%;
+  border: 1px;
+  display: flex;
+  flex-direction: column;
+
+  }
+
+  a{
+  color:white;
+}
+
+
+
+  footer{
+   background-color:#C6d5c5;
+   width: 100%;
+   border-radius:  0px 0px 10px  10px;
+   display: flex;
+   flex-direction: column;
+
+
+   }
+  footer>div{
+   flex-grow: 1;
+   margin-left: 10%;
+   margin-right:  2%;
+   font-size: 20px;
+margin-bottom: 20px;
+
+  }
+
+  footer>div>h1{
+    margin-bottom: 0px;
+  }
+
+
+}
+
+
+@media (min-width:901px) {
+body{
+margin:0px 10% 5% 10%;
+}
+  #pbloque{
+
+  margin-left: 20px;
+  text-shadow: 2px 2px 3px  #02010a;
+  color:white;
+  flex-grow: 4;
+
+  }
+   #contenido{
+     display: flex;
+     flex-direction: row;
+   }
+
+  div[id^="bloque"]{
+  margin:12px;
+  margin-top: 8px;
+  flex-grow: 0.2;
+
+
+  }
+
+  #encabezado{
+    background-color:#5b7989;
+    width: 100%;
+    height: 12%;
+    display: flex;
+    flex-flow: row wrap;
+    border-radius: 10px  10px 0px 0px;
+  }
+
+  #imagenessecundarias{
+  background-color:  #d5c75f;
+  width: 100%;
+  border: 1px;
+  display: flex;
+  flex-direction: row;
+
+  }
+
+
+  footer{
+   background-color:#C6d5c5;
+   width: 100%;
+   border-radius:  0px 0px 10px  10px;
+   display: flex;
+   flex-direction: row;
+
+   }
+  footer>div{
+   flex-grow: 1;
+   margin-left: 2%;
+   margin-right:  2%;
+   font-size: 20px;
+margin-bottom: 30px;
+ }
+
+ a{
+ color:white;
+ text-decoration: none;
+ }
+
+}
+
+
+
+
+
+#imagenessecundarias img[title|="paisajes"]{
+    width: 90%;
+    float:left;
+    margin: 50px 5% 0px 5%;
+    box-shadow: 2px 2px  black ;
+    border: 2px;
+
+    }
+
+    #imagenessecundarias img[title|="retratos"]{
+        width: 90%;
+        float:right;
+        margin: 30px 5% 0px 5%;
+        box-shadow:2px 2px black;
+        height: 90%;
+        border: 2px;
+
+    }
+  .titulos {
+  display: flex;
+  flex-direction:column;
+  }
+
+#imagenessecundarias>div>div {
+
+position:relative;
+text-align: center;
+margin:0px 20% 20px 20%;
+text-decoration: underline;
+color: black;
+border:0px;
+
+
+}
+
+
+body{
+display: flex;
+flex-direction: column;
+background-color: black;
+
+}
+
+
+
+
+*{
+  font-family: 'Dancing Script', cursive;
+}
+
+
+#imagenprincipal{
+background-color:#82c3a6;
+width: 100%;
+margin-top: 30%;
+}
+
+#imagenprincipal img{
+width: 90%;
+margin:30px 5% 30px 5% ;
+box-shadow: 2px 2px  #02010a;
+
+}
+
+
+
+    #imagenessecundarias img[title|="paisajes"]:hover{
+
+        animation: panimacion 3s;
+        }
+
+
+
+#imagenessecundarias img[title|="retratos"]:hover{
+
+  animation: mianimacion 1.5s;
+    }
+
+@-webkit-keyframes panimacion{
+
+  to{
+    transform: rotate(10deg);
+    }
+}
+
+@-webkit-keyframes mianimacion{
+
+  to{
+    transform: translate(5px,-20px);
+    }
+}
