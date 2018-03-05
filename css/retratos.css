@@ -7,29 +7,30 @@
 
 @media (min-width:901px) {
 
-   #bloque1{
-     width:100%;
-     display: flex;
-     flex-direction: row;
-     background-color: #5b7989;
-  border-radius: 10px 10px 0px 0px;
-  animation:slidein 1s;
 
+     #bloque1{
+       width:100%;
+       display: flex;
+       flex-direction: row;
+       background-color: #5b7989;
+    border-radius: 10px 10px 0px 0px;
+    animation:slidein 1s;
+
+      }
+
+  @-webkit-keyframes slidein{
+    0%{
+    margin-top:150%;
     }
 
-@-webkit-keyframes slidein{
-  0%{
-  margin-top:150%;
+    60%{
+    margin-top:72.5%;
+    }
+  100%{
+  margin-top:-5%;
   }
 
-  60%{
-  margin-top:72.5%;
   }
-100%{
-margin-top:-5%;
-}
-
-}
 
 
     nav{
@@ -49,12 +50,11 @@ margin-top:-5%;
       justify-content: space-around;
       align-items: center;
    }
-
    a{
      color:white;
      }
 
-   #Inicio{
+   #Retratos{
    text-decoration: none;
    }
 
@@ -74,55 +74,35 @@ header>h1{
 }
 figure{
   display: flex;
-  flex-flow:column;
-background-color: red;
-width: 100%;
-justify-content: space-around;
-align-items: center;
-margin:0;
-}
-
-#imagenprincipal{
-  display: flex;
+  flex-flow:row wrap;
   justify-content: space-around;
   align-items: center;
-background-color: #82c3a6;
-}
-
-#imagenessecundarias{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-background-color: #d5c75f
-}
-
-.imagen{
-  text-align: center;
+  margin:0;
+  background-color:  #d5c75f;
   width: 100%;
-
-}
-img[title="Perú"]{
-  height: 90%;
-  width: 90%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  }
-
-
-
-img[title="paisajes"], img[title="retratos"]{
-width:  90%;
-height: 90%;
-margin-top: 5%;
-border:1px;
-
+  border: 1px;
 }
 
-figcaption{
-  font-size: 25px;
-margin-bottom: 5%;
-text-decoration: underline;
+
+img[alt="EsmeeDenters"]{
+  width: 28%;
+  height: 30%;
+  margin: 10px 2% 10px 2% !important  ;
+}
+
+#imagen1{
+  -webkit-filter:blur(10px);
+  filter:blur(10px);
+}
+
+img:nth-child(even){
+  -webkit-filter:grayscale(100%);
+  filter:grayscale(100%);
+}
+
+#imagen3{
+  -webkit-filter:sepia(90%);
+  filter:sepia(90%);
 }
 
 footer{
@@ -142,37 +122,11 @@ footer>div{
 margin-bottom: 30px;
 }
 
-img[title|="paisajes"]:hover{
 
-    animation: panimacion 3s;
-    }
-
-
-
-img[title|="retratos"]:hover{
-
-animation: mianimacion 1.5s;
-}
-
-
-@-webkit-keyframes panimacion{
-
-  to{
-    transform: rotate(10deg);
-    }
-}
-
-@-webkit-keyframes mianimacion{
-
-  to{
-    transform: translate(5px,-20px);
-    }
-
- }
 
   }
 
-@media (max-width:900px) {
+@media (min-width:0px) and (max-width:900px) {
 
   #bloque1{
     width:100%;
@@ -185,7 +139,6 @@ animation: mianimacion 1.5s;
     align-items: center;
     animation:slidein 1s;
    }
-
 
    @-webkit-keyframes slidein{
    0%{
@@ -200,6 +153,7 @@ animation: mianimacion 1.5s;
    }
 
    }
+
    nav{
      display: flex;
      flex-direction: row;
@@ -224,9 +178,9 @@ animation: mianimacion 1.5s;
     color:white;
     }
 
-#Inicio{
-text-decoration: none;
- }
+    #Retratos{
+    text-decoration: none;
+    }
 
   header{
    flex-grow: 4;
@@ -242,60 +196,40 @@ header>h1{
  text-shadow: 2px 2px #02010a;
  color:white;
 }
+
 figure{
- display: flex;
- flex-flow:column;
-background-color: red;
-width: 100%;
-justify-content: space-around;
-align-items: center;
-margin:0;
-}
-
-#imagenprincipal{
- display: flex;
- justify-content: space-around;
- align-items: center;
-background-color: #82c3a6;
-}
-
-#imagenessecundarias{
- display: flex;
- flex-direction: column;
- justify-content: space-around;
- align-items: center;
- background-color: #d5c75f
-
-}
-
-.imagen{
- text-align: center;
- width: 100%;
-margin-bottom: 50px;
+  display: flex;
+  flex-flow:column wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin:0;
+  background-color:  #d5c75f;
+  width: 100%;
+  border: 1px;
 }
 
 
-img[title="Perú"]{
- height: 90%;
- width: 90%;
- margin-top: 5%;
- margin-bottom: 5%;
- }
 
-
-
-img[title="paisajes"], img[title="retratos"]{
-width:  90%;
-height: 90%;
-margin-top: 25px;
-border:1px;
+img[alt="EsmeeDenters"]{
+  width: 90%;
+  height: 90%;
+  margin: 10px 2% 10px 2% !important  ;
 
 }
 
-figcaption{
- font-size: 20px;
+#imagen1{
+  -webkit-filter:blur(10px);
+  filter:blur(10px);
+}
 
-text-decoration: underline;
+img:nth-child(even){
+  -webkit-filter:grayscale(100%);
+  filter:grayscale(100%);
+}
+
+#imagen3{
+  -webkit-filter:sepia(90%);
+  filter:sepia(90%);
 }
 
 footer{
@@ -304,7 +238,6 @@ footer{
  border-radius:  0px 0px 10px  10px;
  display: flex;
  flex-direction: column;
-
 
 
  }
@@ -346,7 +279,6 @@ animation: mianimacion 1.5s;
  to{
    transform: translate(5px,-20px);
    }
+}
 
-
-
- }
+  }
